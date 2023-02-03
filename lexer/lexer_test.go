@@ -1,4 +1,5 @@
 package lexer
+
 import (
 	"testing"
 	"treewalker/token"
@@ -7,8 +8,8 @@ import (
 func TestNextToken(t *testing.T) {
 	input := `=+(){},;`
 	tests := []struct {
-		expectedType	token.TokenType
-		expectedLiteral	string
+		expectedType    token.TokenType
+		expectedLiteral string
 	}{
 		{token.ASSIGN, "="},
 		{token.PLUS, "+"},

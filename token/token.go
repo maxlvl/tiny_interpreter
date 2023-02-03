@@ -2,31 +2,31 @@ package token
 
 const (
 	ILLEGAL = "ILLEGAL"
-	EOF 	= "EOF"
+	EOF     = "EOF"
 	// identifiers + literals
-	IDENT 	= "IDENT"
-	INT 	= "INT"
-	
+	IDENT = "IDENT"
+	INT   = "INT"
+
 	// operators
-	ASSIGN 	= "="
-	PLUS 	= "+"
-	
+	ASSIGN = "="
+	PLUS   = "+"
+
 	// delimiters
-	COMMA 		= ","
-	SEMICOLON	= ";" 
-	LPAREN 		= "("
-	RPAREN 		= ")"
-	LBRACE		= "{"
-	RBRACE 		= "}"
-	
+	COMMA     = ","
+	SEMICOLON = ";"
+	LPAREN    = "("
+	RPAREN    = ")"
+	LBRACE    = "{"
+	RBRACE    = "}"
+
 	// keywords
-	FUNCTION 	= "FUNCTION"
-	LET 		= "LET"
+	FUNCTION = "FUNCTION"
+	LET      = "LET"
 )
 
 type TokenType string
 
 type Token struct {
-	Type	TokenType
+	Type    TokenType
 	Literal string
 }
