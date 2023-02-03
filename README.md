@@ -1,2 +1,3 @@
-# tiny_interpreter
-Exploring the internals of interpreters in Go - along with the book by Thorsten Ball
+# tiny_tree_walker
+A tree-walking interpreter for a C-like language, written in Go. 
+According to the example of 'Writing An Interpreter in Go' by Thorsten Ball
