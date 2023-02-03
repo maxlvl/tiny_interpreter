@@ -1,3 +1,3 @@
-module tiny_tree_walker
+module treewalker
 
 go 1.19

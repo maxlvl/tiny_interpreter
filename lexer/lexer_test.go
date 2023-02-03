@@ -1,7 +1,7 @@
 package lexer
 import (
 	"testing"
-	"tiny_tree_walker/token"
+	"treewalker/token"
 )
 
 func TestNextToken(t *testing.T) {

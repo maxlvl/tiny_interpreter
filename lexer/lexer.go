@@ -1,6 +1,6 @@
 package lexer
 
-import "tiny_tree_walker/token"
+import "treewalker/token"
 
 type Lexer struct {
 	input 			string
