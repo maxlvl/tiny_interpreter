@@ -11,8 +11,8 @@ func TestNextToken(t *testing.T) {
 	let add = fn(x, y) {
 		x + y
 	};
-	let result = add(five, ten)
-	`
+	let result = add(five, ten);
+`	
 	tests := []struct {
 		expectedType    token.TokenType
 		expectedLiteral string
@@ -28,10 +28,10 @@ func TestNextToken(t *testing.T) {
 		{token.INT, "10"},
 		{token.SEMICOLON, ";"},
 		{token.LET, "let"},
-		{token.IDENT, "five"},
+		{token.IDENT, "add"},
 		{token.ASSIGN, "="},
 		{token.FUNCTION, "fn"},
-		{token.LPAREN, "{"},
+		{token.LPAREN, "("},
 		{token.IDENT, "x"},
 		{token.COMMA, ","},
 		{token.IDENT, "y"},
@@ -40,8 +40,8 @@ func TestNextToken(t *testing.T) {
 		{token.IDENT, "x"},
 		{token.PLUS, "+"},
 		{token.IDENT, "y"},
+		{token.RBRACE, "}"}, 
 		{token.SEMICOLON, ";"},
-		{token.RBRACE, "}"}, {token.SEMICOLON, ";"},
 		{token.LET, "let"},
 		{token.IDENT, "result"},
 		{token.ASSIGN, "="},
