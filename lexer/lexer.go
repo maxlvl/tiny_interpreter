@@ -53,7 +53,7 @@ func (l *Lexer) NextToken() token.Token {
       tok.Type = token.LookupIndent(tok.Literal)
       return tok
     } else {
-      token = newToken(token.ILLEGAL, l.ch)
+      tok = newToken(token.ILLEGAL, l.ch)
     }
 	}
 	l.readChar()
