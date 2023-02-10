@@ -19,6 +19,8 @@ func TestNextToken(t *testing.T) {
   } else {
     return false;
   }
+  10 == 10;
+  10 != 9;
 `	
 	tests := []struct {
 		expectedType    token.TokenType
@@ -88,7 +90,7 @@ func TestNextToken(t *testing.T) {
     {token.FALSE, "false"},
 		{token.SEMICOLON, ";"},
 		{token.RBRACE, "}"},
-		{token.EOF, ""},
+    {token.EOF, ""},
 	}
 	l := New(input)
 	for i, tt := range tests {

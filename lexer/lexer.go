@@ -15,6 +15,14 @@ func New(input string) *Lexer {
 	return l
 }
 
+func (l *lexer) peekChar() {
+  if l.readPosition >= len(l.input) {
+    return 0
+  } else {
+    return l.input[l.readPosition]
+  }
+}
+
 func (l *Lexer) readChar() {
 	if l.readPosition >= len(l.input) {
 		l.ch = 0
