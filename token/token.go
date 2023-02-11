@@ -6,6 +6,8 @@ const (
 	// identifiers + literals
 	IDENT = "IDENT"
 	INT   = "INT"
+  EQ    = "=="
+  NOT_EQ = "!="
 
 	// operators
 	ASSIGN = "="
