@@ -1,4 +1,6 @@
 package ast
+import "treewalker/token"
+
 type Node interface {
   TokenLiteral() string
 }
